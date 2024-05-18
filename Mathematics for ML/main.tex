@@ -1,0 +1,52 @@
+\documentclass[a4paper]{report}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\title{Mathematics for Machine Learning Notes}
+\author{Benjamin Perry}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{biblatex}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=red,
+}
+
+\addbibresource{references.bib}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Benjamin Perry}
+\fancyhead[L]{Mathematics for Machine Learning Notes}
+\fancyfoot[C]{\thepage~of~\pageref{LastPage}}
+
+% Preamble
+\newcommand{\preamble}{
+  \chapter*{Preamble}
+  This is the preamble of the document. It provides an introduction and overview of the content.
+}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\preamble
+
+\subfile{chapter1.tex}
+
+This is a test \cite{brixi2023salt}
+
+\printbibliography
+
+\end{document}

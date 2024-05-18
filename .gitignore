@@ -1,0 +1,17 @@
+# Ignore everything but .tex files in all directories
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.toc
+*.lof
+*.lot
+*.pdf
+
+!/**/*.tex
